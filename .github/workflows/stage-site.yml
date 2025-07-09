@@ -20,4 +20,4 @@ jobs:
         with:
           destination: 'asf-staging'
           gfm: 'false'
-          output: ${{ github.head_ref }}/blog
+          output: blog/${{ github.head_ref }}
