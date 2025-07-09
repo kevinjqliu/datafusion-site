@@ -12,7 +12,7 @@ on:
 jobs:
   build-pelican:
     runs-on: ubuntu-latest
-    continue-on-error: true
+    # continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - run: pip install MarkupSafe==2.0.1
