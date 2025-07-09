@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pip install MarkupSafe==2.0.1
-      - run: mkdir -p blog
+      - run: mkdir -p blog/${{ github.head_ref }}
       - uses: apache/infrastructure-actions/pelican@main
         with:
           destination: 'asf-staging'
